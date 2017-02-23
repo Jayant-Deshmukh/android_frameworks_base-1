@@ -5974,6 +5974,15 @@ public final class Settings {
         public static final String NETWORK_TRAFFIC_HIDEARROW = "network_traffic_hidearrow";
 
         /**
+         * @hide
+         */
+        public static final String LOCK_SHOW_STATUS_BAR = "lockscreen_show_status_bar";
+
+        /** @hide */
+        private static final Validator LOCK_SHOW_STATUS_BAR_VALIDATOR =
+               BOOLEAN_VALIDATOR;
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -6111,6 +6120,7 @@ public final class Settings {
             QS_BLUR,
             QS_BLUR_ALPHA,
             QS_BLUR_INTENSITY,
+            LOCK_SHOW_STATUS_BAR,
         };
 
         /**
@@ -6340,6 +6350,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(CAMERA_WAKE_SCREEN);
             PRIVATE_SETTINGS.add(CAMERA_SLEEP_ON_RELEASE);
             PRIVATE_SETTINGS.add(CAMERA_LAUNCH);
+            PRIVATE_SETTINGS.add(LOCK_SHOW_STATUS_BAR);
         }
 
         /**
@@ -6542,6 +6553,7 @@ public final class Settings {
             VALIDATORS.put(QS_BLUR, QS_BLUR_VALIDATOR);
             VALIDATORS.put(QS_BLUR_ALPHA, QS_BLUR_ALPHA_VALIDATOR);
             VALIDATORS.put(QS_BLUR_INTENSITY, QS_BLUR_INTENSITY_VALIDATOR);
+            VALIDATORS.put(LOCK_SHOW_STATUS_BAR, LOCK_SHOW_STATUS_BAR_VALIDATOR);
         }
 
         /**
