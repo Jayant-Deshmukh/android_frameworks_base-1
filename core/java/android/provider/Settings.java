@@ -5050,16 +5050,6 @@ public final class Settings {
                 ANY_INTEGER_VALIDATOR;
 
         /**
-         * Whether to show Brightness Icon On Brightness Slider
-         * @hide
-         */
-        public static final String QS_SHOW_BRIGHTNESS_ICON = "qs_show_brightness_icon";
-
-        /** @hide */
-        private static final Validator QS_SHOW_BRIGHTNESS_ICON_VALIDATOR =
-                BOOLEAN_VALIDATOR;
-
-        /**
          * Whether to pulse ambient on new music tracks
          * @hide
          */
